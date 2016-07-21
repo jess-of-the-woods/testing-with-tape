@@ -4,8 +4,8 @@
   "description": "",
   "main": "add.js",
   "scripts": {
-    "test": "nodemon test.js | tap-spec",
-    "test2": "node test.js | tap-simple"
+    "test": "node tests/*.js | tap-spec",
+    "tdd": "nodemon -x \"tests/*.test.js | bin/tap-simple \""
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
     "tap-simple": "^0.3.1",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.0"
+  },
+  "dependencies": {
+    "ansi-codes": "0.0.1-security"
   }
 }
